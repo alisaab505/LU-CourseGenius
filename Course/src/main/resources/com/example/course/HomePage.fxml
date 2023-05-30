@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="455.0" prefWidth="600.0" style="-fx-background-color: #2f3447;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course.HomePageController">
+   <children>
+      <Text fx:id="welcome" fill="WHITE" layoutX="17.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LU Computer Sience Courses" textAlignment="CENTER" wrappingWidth="410.1366271972656">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="logout" layoutX="457.0" layoutY="36.0" mnemonicParsing="false" onAction="#Logout" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #3162a4;" text="LogOut" textFill="WHITE" />
+      <ImageView fitHeight="315.0" fitWidth="148.0" layoutX="444.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/stat.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="277.0" fitWidth="148.0" layoutX="156.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/math.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="272.0" fitWidth="148.0" layoutX="296.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/phy.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="278.0" fitWidth="148.0" layoutX="8.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/cs.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cs" layoutX="8.0" layoutY="343.0" mnemonicParsing="false" onAction="#goCs" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #3162a4;" text="Computer Science" textFill="WHITE" />
+      <Button fx:id="math" layoutX="148.0" layoutY="343.0" mnemonicParsing="false" onAction="#goMath" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #3162a4;" text="Math" textFill="WHITE" />
+      <Button fx:id="phy" layoutX="296.0" layoutY="343.0" mnemonicParsing="false" onAction="#goPhy" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #3162a4;" text="Physics" textFill="WHITE" />
+      <Button fx:id="stat" layoutX="444.0" layoutY="343.0" mnemonicParsing="false" onAction="#goStatistics" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #3162a4;" text="Statistics " textFill="WHITE" />
+   </children>
+</AnchorPane>
